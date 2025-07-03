@@ -1,0 +1,46 @@
+[0.676s] Invoking command in '/home/ponnu/ros2_ws/src/traffic_detector': PYTHONPATH=/home/ponnu/ros2_ws/build/traffic_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ponnu/ros2_ws/install/traffic_detector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/traffic_detector build --build-base /home/ponnu/ros2_ws/build/traffic_detector/build install --record /home/ponnu/ros2_ws/build/traffic_detector/install.log --single-version-externally-managed install_data
+[0.892s] running egg_info
+[0.893s] creating ../../build/traffic_detector/traffic_detector.egg-info
+[0.893s] writing ../../build/traffic_detector/traffic_detector.egg-info/PKG-INFO
+[0.894s] writing dependency_links to ../../build/traffic_detector/traffic_detector.egg-info/dependency_links.txt
+[0.895s] writing entry points to ../../build/traffic_detector/traffic_detector.egg-info/entry_points.txt
+[0.896s] writing requirements to ../../build/traffic_detector/traffic_detector.egg-info/requires.txt
+[0.896s] writing top-level names to ../../build/traffic_detector/traffic_detector.egg-info/top_level.txt
+[0.896s] writing manifest file '../../build/traffic_detector/traffic_detector.egg-info/SOURCES.txt'
+[0.898s] reading manifest file '../../build/traffic_detector/traffic_detector.egg-info/SOURCES.txt'
+[0.899s] writing manifest file '../../build/traffic_detector/traffic_detector.egg-info/SOURCES.txt'
+[0.899s] running build
+[0.899s] running build_py
+[0.899s] creating /home/ponnu/ros2_ws/build/traffic_detector/build
+[0.900s] creating /home/ponnu/ros2_ws/build/traffic_detector/build/lib
+[0.900s] creating /home/ponnu/ros2_ws/build/traffic_detector/build/lib/traffic_detector
+[0.900s] copying traffic_detector/__init__.py -> /home/ponnu/ros2_ws/build/traffic_detector/build/lib/traffic_detector
+[0.900s] copying traffic_detector/detector_node.py -> /home/ponnu/ros2_ws/build/traffic_detector/build/lib/traffic_detector
+[0.901s] copying traffic_detector/detect_node.py -> /home/ponnu/ros2_ws/build/traffic_detector/build/lib/traffic_detector
+[0.901s] copying traffic_detector/publish_test_image.py -> /home/ponnu/ros2_ws/build/traffic_detector/build/lib/traffic_detector
+[0.903s] running install
+[0.904s] running install_lib
+[0.905s] creating /home/ponnu/ros2_ws/install/traffic_detector/lib/python3.10/site-packages/traffic_detector
+[0.905s] copying /home/ponnu/ros2_ws/build/traffic_detector/build/lib/traffic_detector/__init__.py -> /home/ponnu/ros2_ws/install/traffic_detector/lib/python3.10/site-packages/traffic_detector
+[0.906s] copying /home/ponnu/ros2_ws/build/traffic_detector/build/lib/traffic_detector/detector_node.py -> /home/ponnu/ros2_ws/install/traffic_detector/lib/python3.10/site-packages/traffic_detector
+[0.906s] copying /home/ponnu/ros2_ws/build/traffic_detector/build/lib/traffic_detector/detect_node.py -> /home/ponnu/ros2_ws/install/traffic_detector/lib/python3.10/site-packages/traffic_detector
+[0.906s] copying /home/ponnu/ros2_ws/build/traffic_detector/build/lib/traffic_detector/publish_test_image.py -> /home/ponnu/ros2_ws/install/traffic_detector/lib/python3.10/site-packages/traffic_detector
+[0.906s] byte-compiling /home/ponnu/ros2_ws/install/traffic_detector/lib/python3.10/site-packages/traffic_detector/__init__.py to __init__.cpython-310.pyc
+[0.907s] byte-compiling /home/ponnu/ros2_ws/install/traffic_detector/lib/python3.10/site-packages/traffic_detector/detector_node.py to detector_node.cpython-310.pyc
+[0.908s] byte-compiling /home/ponnu/ros2_ws/install/traffic_detector/lib/python3.10/site-packages/traffic_detector/detect_node.py to detect_node.cpython-310.pyc
+[0.908s] byte-compiling /home/ponnu/ros2_ws/install/traffic_detector/lib/python3.10/site-packages/traffic_detector/publish_test_image.py to publish_test_image.cpython-310.pyc
+[0.909s] running install_data
+[0.909s] creating /home/ponnu/ros2_ws/install/traffic_detector/share
+[0.909s] creating /home/ponnu/ros2_ws/install/traffic_detector/share/ament_index
+[0.910s] creating /home/ponnu/ros2_ws/install/traffic_detector/share/ament_index/resource_index
+[0.910s] creating /home/ponnu/ros2_ws/install/traffic_detector/share/ament_index/resource_index/packages
+[0.911s] copying resource/traffic_detector -> /home/ponnu/ros2_ws/install/traffic_detector/share/ament_index/resource_index/packages
+[0.911s] creating /home/ponnu/ros2_ws/install/traffic_detector/share/traffic_detector
+[0.911s] copying package.xml -> /home/ponnu/ros2_ws/install/traffic_detector/share/traffic_detector
+[0.912s] running install_egg_info
+[0.913s] Copying ../../build/traffic_detector/traffic_detector.egg-info to /home/ponnu/ros2_ws/install/traffic_detector/lib/python3.10/site-packages/traffic_detector-0.0.1-py3.10.egg-info
+[0.914s] running install_scripts
+[0.934s] Installing detect_traffic script to /home/ponnu/ros2_ws/install/traffic_detector/lib/traffic_detector
+[0.934s] Installing publish_test_image script to /home/ponnu/ros2_ws/install/traffic_detector/lib/traffic_detector
+[0.934s] writing list of installed files to '/home/ponnu/ros2_ws/build/traffic_detector/install.log'
+[0.960s] Invoked command in '/home/ponnu/ros2_ws/src/traffic_detector' returned '0': PYTHONPATH=/home/ponnu/ros2_ws/build/traffic_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ponnu/ros2_ws/install/traffic_detector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/traffic_detector build --build-base /home/ponnu/ros2_ws/build/traffic_detector/build install --record /home/ponnu/ros2_ws/build/traffic_detector/install.log --single-version-externally-managed install_data

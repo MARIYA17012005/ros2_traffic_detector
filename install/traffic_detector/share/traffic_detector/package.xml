@@ -1,0 +1,14 @@
+k<?xml version="1.0"?>
+<package format="3">
+  <name>traffic_detector</name>
+  <version>0.0.1</version>
+  <description>Traffic light and sign detection using YOLOv8 in ROS 2</description>
+  <maintainer email="your@email.com">ponnu</maintainer>
+  <license>MIT</license>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+</package>
+

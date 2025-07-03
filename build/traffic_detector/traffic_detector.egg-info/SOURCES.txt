@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+../../build/traffic_detector/traffic_detector.egg-info/PKG-INFO
+../../build/traffic_detector/traffic_detector.egg-info/SOURCES.txt
+../../build/traffic_detector/traffic_detector.egg-info/dependency_links.txt
+../../build/traffic_detector/traffic_detector.egg-info/entry_points.txt
+../../build/traffic_detector/traffic_detector.egg-info/requires.txt
+../../build/traffic_detector/traffic_detector.egg-info/top_level.txt
+../../build/traffic_detector/traffic_detector.egg-info/zip-safe
+resource/traffic_detector
+traffic_detector/__init__.py
+traffic_detector/detect_node.py
+traffic_detector/detector_node.py
+traffic_detector/publish_test_image.py

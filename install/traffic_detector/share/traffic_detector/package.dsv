@@ -1,0 +1,3 @@
+source;share/traffic_detector/hook/pythonpath.ps1
+source;share/traffic_detector/hook/pythonpath.dsv
+source;share/traffic_detector/hook/pythonpath.sh

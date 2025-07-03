@@ -1,0 +1,66 @@
+import rclpy
+from rclpy.node import Node
+from vehiclecontrol.msg import Control
+
+class VehicleControlPublisher(Node):
+    def __init__(self):
+        super().__init__('test_vehicle_control_publisher')
+        self.publisher_ = self.create_publisher(Control, 'vehicle_control', 10)
+        self.timer = self.create_timer(1.0, self.timer_callback)
+        self.throttle = 0.5
+        self.steering = 0.1
+        self.brake = 0.0
+
+    def timer_callback(self):
+        msg = Control()
+        msg.throttle = self.throttle
+        msg.steering = self.steering
+        msg.brake = self.brake
+
+        self.publisher_.publish(msg)
+        self.get_logger().info(
+            f'Published -> Throttle: {msg.throttle}, Steering: {msg.steering}, Brake: {msg.brake}'
+        )
+
+def main(args=None):
+    rclpy.init(args=args)
+    node = VehicleControlPublisher()
+    rclpy.spin(node)
+    node.destroy_node()
+    rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()
+import rclpy
+from rclpy.node import Node
+from vehiclecontrol.msg import Control
+
+class VehicleControlPublisher(Node):
+    def __init__(self):
+        super().__init__('test_vehicle_control_publisher')
+        self.publisher_ = self.create_publisher(Control, 'vehicle_control', 10)
+        self.timer = self.create_timer(1.0, self.timer_callback)
+        self.throttle = 0.5
+        self.steering = 0.1
+        self.brake = 0.0
+
+    def timer_callback(self):
+        msg = Control()
+        msg.throttle = self.throttle
+        msg.steering = self.steering
+        msg.brake = self.brake
+
+        self.publisher_.publish(msg)
+        self.get_logger().info(
+            f'Published -> Throttle: {msg.throttle}, Steering: {msg.steering}, Brake: {msg.brake}'
+        )
+
+def main(args=None):
+    rclpy.init(args=args)
+    node = VehicleControlPublisher()
+    rclpy.spin(node)
+    node.destroy_node()
+    rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()

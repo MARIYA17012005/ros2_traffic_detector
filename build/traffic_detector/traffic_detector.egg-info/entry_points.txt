@@ -1,0 +1,4 @@
+[console_scripts]
+detect_traffic = traffic_detector.detector_node:main
+publish_test_image = traffic_detector.publish_test_image:main
+

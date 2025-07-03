@@ -1,0 +1,44 @@
+running egg_info
+creating ../../build/traffic_detector/traffic_detector.egg-info
+writing ../../build/traffic_detector/traffic_detector.egg-info/PKG-INFO
+writing dependency_links to ../../build/traffic_detector/traffic_detector.egg-info/dependency_links.txt
+writing entry points to ../../build/traffic_detector/traffic_detector.egg-info/entry_points.txt
+writing requirements to ../../build/traffic_detector/traffic_detector.egg-info/requires.txt
+writing top-level names to ../../build/traffic_detector/traffic_detector.egg-info/top_level.txt
+writing manifest file '../../build/traffic_detector/traffic_detector.egg-info/SOURCES.txt'
+reading manifest file '../../build/traffic_detector/traffic_detector.egg-info/SOURCES.txt'
+writing manifest file '../../build/traffic_detector/traffic_detector.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ponnu/ros2_ws/build/traffic_detector/build
+creating /home/ponnu/ros2_ws/build/traffic_detector/build/lib
+creating /home/ponnu/ros2_ws/build/traffic_detector/build/lib/traffic_detector
+copying traffic_detector/__init__.py -> /home/ponnu/ros2_ws/build/traffic_detector/build/lib/traffic_detector
+copying traffic_detector/detector_node.py -> /home/ponnu/ros2_ws/build/traffic_detector/build/lib/traffic_detector
+copying traffic_detector/detect_node.py -> /home/ponnu/ros2_ws/build/traffic_detector/build/lib/traffic_detector
+copying traffic_detector/publish_test_image.py -> /home/ponnu/ros2_ws/build/traffic_detector/build/lib/traffic_detector
+running install
+running install_lib
+creating /home/ponnu/ros2_ws/install/traffic_detector/lib/python3.10/site-packages/traffic_detector
+copying /home/ponnu/ros2_ws/build/traffic_detector/build/lib/traffic_detector/__init__.py -> /home/ponnu/ros2_ws/install/traffic_detector/lib/python3.10/site-packages/traffic_detector
+copying /home/ponnu/ros2_ws/build/traffic_detector/build/lib/traffic_detector/detector_node.py -> /home/ponnu/ros2_ws/install/traffic_detector/lib/python3.10/site-packages/traffic_detector
+copying /home/ponnu/ros2_ws/build/traffic_detector/build/lib/traffic_detector/detect_node.py -> /home/ponnu/ros2_ws/install/traffic_detector/lib/python3.10/site-packages/traffic_detector
+copying /home/ponnu/ros2_ws/build/traffic_detector/build/lib/traffic_detector/publish_test_image.py -> /home/ponnu/ros2_ws/install/traffic_detector/lib/python3.10/site-packages/traffic_detector
+byte-compiling /home/ponnu/ros2_ws/install/traffic_detector/lib/python3.10/site-packages/traffic_detector/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ponnu/ros2_ws/install/traffic_detector/lib/python3.10/site-packages/traffic_detector/detector_node.py to detector_node.cpython-310.pyc
+byte-compiling /home/ponnu/ros2_ws/install/traffic_detector/lib/python3.10/site-packages/traffic_detector/detect_node.py to detect_node.cpython-310.pyc
+byte-compiling /home/ponnu/ros2_ws/install/traffic_detector/lib/python3.10/site-packages/traffic_detector/publish_test_image.py to publish_test_image.cpython-310.pyc
+running install_data
+creating /home/ponnu/ros2_ws/install/traffic_detector/share
+creating /home/ponnu/ros2_ws/install/traffic_detector/share/ament_index
+creating /home/ponnu/ros2_ws/install/traffic_detector/share/ament_index/resource_index
+creating /home/ponnu/ros2_ws/install/traffic_detector/share/ament_index/resource_index/packages
+copying resource/traffic_detector -> /home/ponnu/ros2_ws/install/traffic_detector/share/ament_index/resource_index/packages
+creating /home/ponnu/ros2_ws/install/traffic_detector/share/traffic_detector
+copying package.xml -> /home/ponnu/ros2_ws/install/traffic_detector/share/traffic_detector
+running install_egg_info
+Copying ../../build/traffic_detector/traffic_detector.egg-info to /home/ponnu/ros2_ws/install/traffic_detector/lib/python3.10/site-packages/traffic_detector-0.0.1-py3.10.egg-info
+running install_scripts
+Installing detect_traffic script to /home/ponnu/ros2_ws/install/traffic_detector/lib/traffic_detector
+Installing publish_test_image script to /home/ponnu/ros2_ws/install/traffic_detector/lib/traffic_detector
+writing list of installed files to '/home/ponnu/ros2_ws/build/traffic_detector/install.log'
