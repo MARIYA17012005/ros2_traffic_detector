@@ -1,0 +1,6 @@
+path: /home/ponnu/ros2_ws/datasets/traffic_light_custom
+train: images/train
+val: images/train
+
+nc: 3
+names: ['red_light', 'green_light', 'no_light']

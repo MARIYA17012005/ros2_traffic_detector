@@ -1,0 +1,7 @@
+[0.000000] (-) TimerEvent: {}
+[0.000769] (-) JobUnselected: {'identifier': 'traffic_detector'}
+[0.000834] (-) JobUnselected: {'identifier': 'traffic_light_detector'}
+[0.000899] (-) JobUnselected: {'identifier': 'traffic_perception'}
+[0.000921] (-) JobUnselected: {'identifier': 'traffic_sign_detector'}
+[0.000946] (-) JobUnselected: {'identifier': 'vehiclecontrol'}
+[0.001280] (-) EventReactorShutdown: {}
