@@ -12,6 +12,7 @@ resource/ros2_traffic_detector
 ros2_traffic_detector/__init__.py
 ros2_traffic_detector/image_publisher.py
 ros2_traffic_detector/traffic_light_infer.py
+ros2_traffic_detector/traffic_sign_infer.py
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py

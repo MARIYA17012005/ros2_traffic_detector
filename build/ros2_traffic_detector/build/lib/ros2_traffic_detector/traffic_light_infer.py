@@ -2,6 +2,7 @@
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
+from std_msgs.msg import String
 from cv_bridge import CvBridge
 import cv2
 from ultralytics import YOLO
@@ -11,23 +12,18 @@ class TrafficLightDetector(Node):
     def __init__(self):
         super().__init__('traffic_light_detector')
         self.subscription = self.create_subscription(Image, '/camera/image_raw', self.image_callback, 10)
+        self.publisher = self.create_publisher(String, '/traffic_light_status', 10)
         self.bridge = CvBridge()
 
-        # Load your trained YOLOv8 model
-        model_path = os.path.expanduser('runs/detect/traffic_light_detector4/weights/best.pt')
+        # Load your YOLO model
+        model_path = '/home/ponnu/ros2_ws/src/traffic_light_detector/best.pt'
         self.model = YOLO(model_path)
 
-        # Assuming your model class index mapping is:
-        # 0: red light, 1: green light, 2: yellow light
-        self.class_names = ['Red', 'Green', 'Yellow']
-
+        self.class_names = ['Red', 'Green', 'Yellow']  # class indices must match model training
         self.get_logger().info("Traffic light detection started")
 
     def image_callback(self, msg):
-        # Convert ROS image to OpenCV format
         cv_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
-
-        # Run YOLO detection
         results = self.model(cv_image)
 
         detected_labels = set()
@@ -40,11 +36,17 @@ class TrafficLightDetector(Node):
                     label = self.class_names[cls_id]
                     detected_labels.add(label)
 
-        # Print detected lights (if any)
         if detected_labels:
-            self.get_logger().info(f"Detected traffic lights: {', '.join(detected_labels)}")
+            light_status = ','.join(detected_labels)
+            self.get_logger().info(f"Detected traffic lights: {light_status}")
         else:
+            light_status = 'None'
             self.get_logger().info("No traffic light detected")
+
+        # Publish the result
+        msg = String()
+        msg.data = light_status
+        self.publisher.publish(msg)
 
 def main(args=None):
     rclpy.init(args=args)

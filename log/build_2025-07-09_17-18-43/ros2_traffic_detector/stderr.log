@@ -1,5 +1,0 @@
-  File "/home/ponnu/ros2_ws/install/ros2_traffic_detector/lib/python3.10/site-packages/ros2_traffic_detector/traffic_light_infer.py", line 32
-    self.get_logger().info("🖼 Detection complete - image saved."
-                          ^
-SyntaxError: '(' was never closed
-
